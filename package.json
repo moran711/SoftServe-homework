@@ -1,0 +1,47 @@
+{
+  "name": "site",
+  "version": "1.0.0",
+  "description": "softserve homework site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moran711/SoftServe-homework.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "scss",
+    "js",
+    "webpack"
+  ],
+  "author": "Roman Romaniv <romaniv788@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moran711/SoftServe-homework/issues"
+  },
+  "homepage": "https://github.com/moran711/SoftServe-homework#readme",
+  "devDependencies": {
+    "@babel/core": "^7.10.1",
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/preset-env": "^7.10.1",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.0.1",
+    "cross-env": "^7.0.2",
+    "css-loader": "^3.5.3",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.10.1",
+    "normalize.css": "^8.0.1"
+  }
+}
