@@ -49,7 +49,12 @@ module.exports = {
       patterns: [{
         from: path.resolve(__dirname, 'src/favicon.ico'),
         to: path.resolve(__dirname, 'dist')
-      }],
+      },
+      {
+        from: path.resolve(__dirname, 'src/img'),
+        to: path.resolve(__dirname, 'dist/img')
+      }
+      ],
     }),
     new MiniCssExtractPlugin({
       filename: filename('css')
@@ -60,6 +65,19 @@ module.exports = {
   ],
   module: {
     rules: [
+        {
+          test: /\.(png|jpg)$/i,
+          use: [
+            {
+              loader: 'image-webpack-loader',
+              options: {
+                bypassOnDebug: true, // webpack@1.x
+                disable: true, // webpack@2.x and newer
+              },
+            },
+            'file-loader',
+          ],
+        },
       {
         test: /\.s[ac]ss$/i,
         use: [
