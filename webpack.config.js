@@ -65,9 +65,9 @@ module.exports = {
   ],
   module: {
     rules: [
-        {
-          test: /\.(png|jpg)$/i,
-          use: [
+      {
+        test: /\.(png|jpg)$/i,
+        use: [
             {
               loader: 'image-webpack-loader',
               options: {

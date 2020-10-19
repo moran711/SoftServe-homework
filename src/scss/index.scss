@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 @import "~normalize.css";
 @import "./header.scss";
+@import "./footer.scss";
+@import "./main.scss";
 
 body {
-  width: 90%;
+  width: $body-width;
   margin: auto;
   font-family: "Roboto", "sans-serif", serif;
   font-size: 18px;
