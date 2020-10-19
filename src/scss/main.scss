@@ -1,2 +1,30 @@
 @import "variables";
 @import "mixins";
+
+.main {
+    margin: 10px;
+    & .history-of-fc {
+        & .header-history-of-fc {
+          text-align: center;
+        }
+        & .content-history-of-fc {
+          display: grid;
+          grid-gap: 10px;
+          grid-template-areas: 
+            "text text photo"
+            "text text photo"
+          ;
+
+          & .text-container-history-of-fc{
+            grid-area: 'text';
+            padding: 10px;
+          }
+          & .container-photo-history-of-fc {
+            grid-area: 'photo';
+            & .photo-history-of-fc {
+              width: 90%;
+            }
+          }
+        }
+    }
+}
