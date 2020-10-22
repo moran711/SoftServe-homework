@@ -14,7 +14,7 @@ const isDev = !isProd;
 console.log('is Prod', isProd);
 console.log('isDev', isDev);
 
-const filename = ext => isDev ? `bundle.${ext}` : `bundle.[hash].${ext}`;
+const filename = ext => isDev ? `[name].bundle.${ext}` : `[name].bundle.[hash].${ext}`;
 
 let htmlPageNames = ['news'];
 
@@ -85,8 +85,8 @@ module.exports = {
             {
               loader: 'image-webpack-loader',
               options: {
-                bypassOnDebug: true, // webpack@1.x
-                disable: true, // webpack@2.x and newer
+                bypassOnDebug: true,
+                disable: true,
               },
             },
             'file-loader',
