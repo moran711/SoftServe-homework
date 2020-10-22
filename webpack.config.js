@@ -20,8 +20,8 @@ let htmlPageNames = ['news'];
 
 let multipleHtmlPlugins = htmlPageNames.map(name => {
   return new HTMLWebpackPlugin({
-    template: `./${name}.html`,
-    filename: `${name}.html`,
+    template: `./pages/${name}/${name}.html`,
+    filename: `./pages/${name}/${name}.html`,
     chunks: [`${name}`]
   })
 });
@@ -31,7 +31,7 @@ module.exports = {
   mode: 'development',
   entry: {
     index: './index.js', 
-    news: './news.js'
+    news: './pages/news/news.js'
   },
   output: {
     filename: filename('js'),
