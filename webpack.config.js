@@ -20,16 +20,19 @@ let htmlPageNames = ['news'];
 
 let multipleHtmlPlugins = htmlPageNames.map(name => {
   return new HTMLWebpackPlugin({
-    template: `./${name}.html`, // relative path to the HTML files
-    filename: `${name}.html`, // output HTML files
-    chunks: [`${name}`] // respective JS files
+    template: `./${name}.html`,
+    filename: `${name}.html`,
+    chunks: [`${name}`]
   })
 });
 
 module.exports = {
   context: path.resolve(__dirname, 'src'),
   mode: 'development',
-  entry: ['@babel/polyfill', './index.js'],
+  entry: {
+    index: './index.js', 
+    news: './news.js'
+  },
   output: {
     filename: filename('js'),
     path: path.resolve(__dirname, 'dist')
@@ -54,7 +57,7 @@ module.exports = {
         removeComments: isProd,
         collapseWhitespace: isProd
       },
-      chunks: ['main']
+      chunks: ['index']
     }),
     new CopyPlugin({
       patterns: [{
