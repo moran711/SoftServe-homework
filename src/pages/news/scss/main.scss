@@ -1,2 +1,35 @@
 @import "variables";
 @import "mixins";
+
+.main {
+  padding-top: $nav-height;
+  & .news-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    & .new-container {
+      margin: 10px;
+      & .new-img {
+        padding: 10px;
+        width: 100%;
+      }
+      & .new-body {
+				display: grid;
+				justify-content: center;
+				align-content: center;
+        & .new-title {
+          text-align: center;
+        }
+        & .new-btn {
+          padding: 10px;
+          background-color: $btn-background;
+					border-radius: 10px;
+					width: 80px;
+          &:hover {
+						cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

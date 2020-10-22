@@ -86,10 +86,9 @@
     overflow: hidden;
   
     & .banner-photo {
-      transition: 5s;
       display: block;
       width: 100%;
-      transform: scale(1.4);
+      animation: banner 5s;
     }
   }
 }
@@ -107,4 +106,9 @@
     width: 100px;
     margin-right:5px;
   }
+}
+
+@keyframes banner {
+  50%   { opacity: 0; }
+  100% { opacity: 1; }
 }
