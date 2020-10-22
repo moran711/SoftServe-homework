@@ -1,0 +1,98 @@
+@import "variables";
+@import "mixins";
+
+
+.header {
+    color: $header-font-color;
+  
+    & .nav {
+      background-color: $header-background;
+      position: fixed;
+      z-index: 1000;
+      width: $body-width;
+      height: $nav-height;
+      font-size: 1.5rem;
+      padding: 0px;
+      display: flex;
+      justify-content: space-between;
+  
+      & .menu-list {
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-around;
+        list-style: none;
+        margin: 3px 0 3px 0;
+        padding: 0 0 0 3px;
+  
+        & .menu-item {
+          cursor: pointer;
+          margin-left: 2px;
+          
+          & .menu-item-pop {
+            display: none;
+          }
+  
+          &:hover {
+            background-color: $active-background;
+            color: $active-font-color;
+            transition: 2s;
+            transform: rotate(360deg);
+          }
+        }
+  
+        & .pop {
+          &:hover .menu-item-pop {
+            display: flex;
+            padding: 5px;
+            & .pop-menu-list {
+              list-style: none;
+              padding: 0;
+              & .pop-menu-item {
+                padding: 5px;
+  
+                &:hover {
+                  background-color: $header-background;
+                  color: $header-font-color;
+                }
+              }
+            }
+          }
+        }
+  
+        & .active {
+          background-color: $active-background;
+          color: $active-font-color;
+          padding: 1px 10px;
+        }
+      }
+  
+      & .logo {
+        right: 0;
+        margin: 2px;
+        height: $nav-height - 2px;
+        padding-right: 2px;
+        animation: coin 5s infinite;
+        & .logo-photo {
+          height: 1em;
+        }
+      }
+    }
+  }
+  
+  @keyframes coin {
+    0%   {
+      width: 100px;
+      margin-right:5px;
+    }
+    50%  {
+      width: 0px;
+      margin-left:50px;
+    }
+    100% {
+      width: 100px;
+      margin-right:5px;
+    }
+  }
+  

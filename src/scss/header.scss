@@ -7,6 +7,7 @@
   & .nav {
     background-color: $header-background;
     position: fixed;
+    z-index: 1000;
     width: $body-width;
     height: $nav-height;
     font-size: 1.5rem;
@@ -27,7 +28,7 @@
       & .menu-item {
         cursor: pointer;
         margin-left: 2px;
-
+        
         & .menu-item-pop {
           display: none;
         }
@@ -35,6 +36,8 @@
         &:hover {
           background-color: $active-background;
           color: $active-font-color;
+          transition: 2s;
+          transform: rotate(360deg);
         }
       }
 
@@ -69,6 +72,7 @@
       margin: 2px;
       height: $nav-height - 2px;
       padding-right: 2px;
+      animation: coin 5s infinite;
       & .logo-photo {
         height: 1em;
       }
@@ -77,8 +81,30 @@
 
   & .banner {
     width: auto;
+    display: inline-block;
+    margin-top: $nav-height;
+    overflow: hidden;
+  
     & .banner-photo {
+      transition: 5s;
+      display: block;
       width: 100%;
+      transform: scale(1.4);
     }
+  }
+}
+
+@keyframes coin {
+  0%   {
+    width: 100px;
+    margin-right:5px;
+  }
+  50%  {
+    width: 0px;
+    margin-left:50px;
+  }
+  100% {
+    width: 100px;
+    margin-right:5px;
   }
 }

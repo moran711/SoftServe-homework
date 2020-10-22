@@ -1,3 +1,1 @@
-import '@/scss/index.scss';
-
-alert('dsjdjdsj')
+import '@/pages/news/scss/index.scss';

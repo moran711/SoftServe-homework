@@ -20,6 +20,11 @@
       }
       & .container-photo-history-of-fc {
         grid-area: "photo";
+        transition: 1s;
+        display: block;
+        &:hover {
+          transform: scale(1.05);
+        }
         & .photo-history-of-fc {
           width: 90%;
         }
