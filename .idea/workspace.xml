@@ -14,6 +14,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
@@ -50,6 +53,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603012542837</updated>
       <workItem from="1603012547419" duration="8956000" />
+      <workItem from="1603303858878" duration="39000" />
     </task>
     <servers />
   </component>

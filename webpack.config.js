@@ -16,6 +16,16 @@ console.log('isDev', isDev);
 
 const filename = ext => isDev ? `bundle.${ext}` : `bundle.[hash].${ext}`;
 
+let htmlPageNames = ['news'];
+
+let multipleHtmlPlugins = htmlPageNames.map(name => {
+  return new HTMLWebpackPlugin({
+    template: `./${name}.html`, // relative path to the HTML files
+    filename: `${name}.html`, // output HTML files
+    chunks: [`${name}`] // respective JS files
+  })
+});
+
 module.exports = {
   context: path.resolve(__dirname, 'src'),
   mode: 'development',
@@ -43,7 +53,8 @@ module.exports = {
       minify: {
         removeComments: isProd,
         collapseWhitespace: isProd
-      }
+      },
+      chunks: ['main']
     }),
     new CopyPlugin({
       patterns: [{
@@ -62,7 +73,7 @@ module.exports = {
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
     })
-  ],
+  ].concat(multipleHtmlPlugins),
   module: {
     rules: [
       {
