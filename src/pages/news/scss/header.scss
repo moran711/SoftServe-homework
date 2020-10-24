@@ -15,7 +15,10 @@
       padding: 0px;
       display: flex;
       justify-content: space-between;
-  
+
+      & .material-icons{
+        display: none;
+      }
       & .menu-list {
         width: 70%;
         display: flex;
@@ -25,11 +28,13 @@
         list-style: none;
         margin: 3px 0 3px 0;
         padding: 0 0 0 3px;
-  
+
         & .menu-item {
           cursor: pointer;
           margin-left: 2px;
-          
+          a {
+            color: $header-font-color;
+          }
           & .menu-item-pop {
             display: none;
           }
@@ -73,26 +78,105 @@
         margin: 2px;
         height: $nav-height - 2px;
         padding-right: 2px;
-        animation: coin 5s infinite;
+        animation-name: spin;
+        animation-duration: 5000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
         & .logo-photo {
           height: 1em;
         }
       }
     }
   }
-  
-  @keyframes coin {
-    0%   {
-      width: 100px;
-      margin-right:5px;
-    }
-    50%  {
-      width: 0px;
-      margin-left:50px;
-    }
-    100% {
-      width: 100px;
-      margin-right:5px;
+
+@keyframes spin {
+  from {
+    transform:rotate(0deg);
+  }
+  to {
+    transform:rotate(360deg);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .header {
+    & .nav {
+      display: grid;
+      grid-template-areas:
+      "burger . . . logo"
+    ;
+      justify-content: space-between;
+      align-items: center;
+      & .burger-icon{
+        display: block;
+        padding-left: 3px;
+        grid-area: burger;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      & .menu-list {
+        display: none;
+        & .menu-item {
+        }
+      }
+      & .logo {
+        grid-area: logo;
+      }
+      & .burger-menu {
+        padding-left: 5px;
+        margin-top: $nav-height;
+        position: fixed;
+        background-color: #570078;
+        list-style: none;
+        top: 0;
+        bottom: 0;
+        left: 5%;
+        width: 30%;
+        z-index: 1213;
+        & .burger-item {
+          padding: 10px;
+          font-size: 0.75rem;
+          & .menu-item-pop {
+            display: none;
+          }
+          a {
+            color: white;
+          }
+          &:not(:first-child) {
+            border-top: 1px solid;
+          }
+          &:hover {
+            cursor: pointer;
+            background-color: #a100de;
+          }
+        }
+        & .active {
+          background-color: #a100de;
+        }
+        & .pop {
+            & .pop-menu {
+              display: none;
+              padding-left: 5px;
+              list-style: none;
+              & .pop-menu-item {
+                padding: 10px;
+                &:hover {
+                  background-color: #570078;
+                }
+              }
+            }
+          &:hover .pop-menu {
+            display: block;
+          }
+        }
+      }
     }
   }
+}
+
   

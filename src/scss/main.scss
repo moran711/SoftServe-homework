@@ -58,3 +58,58 @@
     }
   }
 }
+
+@media (min-width: 320px) and (max-width: 767px){
+  .main {
+    & .history-of-fc {
+      & .content-history-of-fc {
+        grid-template-areas:
+        "text"
+        "photo";
+        justify-content: center;
+      }
+    }
+
+    & .last-victory {
+      & .content-last-victory {
+        height: 400px;
+        & .content-scope {
+          font-size: 0.75rem;
+          & .scope {
+            font-size: 1em;
+          }
+          & img {
+            height: 25px
+          }
+        }
+        & .video-container-last-victory {
+          height: 250px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+  .main {
+
+    & .history-of-fc {
+      & .content-history-of-fc {
+        grid-template-areas:
+        "text"
+        "photo";
+        justify-content: center;
+      }
+    }
+
+    & .last-victory {
+      & .content-last-victory {
+        height: 500px;
+        & .video-container-last-victory {
+          height: 400px;
+        }
+      }
+    }
+  }
+}
+

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import "~normalize.css";
 @import "./header.scss";
 @import "./footer.scss";
@@ -17,5 +18,17 @@ a {
   
   &:hover {
     color: $active-font-color;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  body {
+    font-size: 13px;
   }
 }

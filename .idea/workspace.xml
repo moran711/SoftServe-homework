@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2bd13b1d-32f7-49a4-a7f7-1719844a1648" name="Default Changelist" comment="" />
+    <list default="true" id="2bd13b1d-32f7-49a4-a7f7-1719844a1648" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/news/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/news/news.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/news/news.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/news/news.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/news/scss/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/news/scss/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/news/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/news/scss/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/news/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/news/scss/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/main.scss" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,6 +66,10 @@
       <updated>1603012542837</updated>
       <workItem from="1603012547419" duration="8956000" />
       <workItem from="1603303858878" duration="39000" />
+      <workItem from="1603471352538" duration="533000" />
+      <workItem from="1603523464740" duration="518000" />
+      <workItem from="1603538203956" duration="7945000" />
+      <workItem from="1603553543163" duration="3576000" />
     </task>
     <servers />
   </component>
