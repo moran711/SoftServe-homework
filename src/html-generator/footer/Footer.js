@@ -1,6 +1,5 @@
 export default class Footer {
-  constructor() {
-  }
+  constructor() {}
 
   toHtml() {
     return `
@@ -13,4 +12,3 @@ export default class Footer {
     `
   }
 }
-

@@ -2,6 +2,14 @@
   "name": "site",
   "version": "1.0.0",
   "description": "softserve homework site",
+  "overrides": [
+    {
+      "files": ".prettierrc",
+      "options": {
+        "parser": "json"
+      }
+    }
+  ],
   "main": "index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-dev-server --open",
