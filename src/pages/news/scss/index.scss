@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import "~normalize.css";
-@import "./header.scss";
-@import "./footer.scss";
+@import "@/scss/header.scss";
+@import "@/scss/footer.scss";
 @import "./main.scss";
 
 body {

@@ -43,6 +43,13 @@
           transition: 2s;
           transform: rotate(360deg);
         }
+        a {
+          color: $header-font-color;
+
+          &:hover {
+            color: $active-font-color;
+          }
+        }
       }
 
       & .pop {
@@ -68,6 +75,9 @@
         background-color: $active-background;
         color: $active-font-color;
         padding: 1px 10px;
+        a {
+          color: $active-font-color;
+        }
       }
     }
 
@@ -99,7 +109,14 @@
     }
   }
 }
-
+@media (min-width: 767px) and (max-width: 900px) {
+  .menu-item {
+    font-size: 0.85rem;
+  }
+  .burger-menu {
+    display: none;
+  }
+}
 @media (min-width: 320px) and (max-width: 767px) {
   .header {
     & .nav {

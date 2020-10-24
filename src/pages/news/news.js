@@ -1,4 +1,4 @@
 import '@/pages/news/scss/index.scss';
-import {addBurgerMenu} from "@/helper-functions/helper-functions";
+import {init} from "@/helper-functions/helper-functions";
 
-addBurgerMenu('news');
+init('news');

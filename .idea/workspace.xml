@@ -1,18 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="2bd13b1d-32f7-49a4-a7f7-1719844a1648" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/html-generator/nav/Nav.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helper-functions/helper-functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helper-functions/helper-functions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/news/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/news/news.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/news/news.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/news/news.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/news/scss/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/news/scss/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/news/scss/footer.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/news/scss/header.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/news/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/news/scss/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/news/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/news/scss/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/main.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +41,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -69,12 +88,24 @@
       <workItem from="1603471352538" duration="533000" />
       <workItem from="1603523464740" duration="518000" />
       <workItem from="1603538203956" duration="7945000" />
-      <workItem from="1603553543163" duration="3576000" />
+      <workItem from="1603553543163" duration="3853000" />
+      <workItem from="1603557894518" duration="2739000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="792" y="375" key="#Other_File_Types" timestamp="1603015158207">
@@ -85,5 +116,16 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="703" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1603018159439" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/index.js</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

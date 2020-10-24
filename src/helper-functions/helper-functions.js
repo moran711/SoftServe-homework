@@ -1,9 +1,12 @@
-export const addBurgerMenu = (activePage) => {
+import Nav from "@/html-generator/nav/Nav";
+import Footer from "@/html-generator/footer/Footer";
+
+const addBurgerMenu = (activePage) => {
   const burgerIcon = document.getElementsByClassName('burger-icon')[0];
   const nav = document.getElementsByClassName('nav')[0];
-  // <a href="../../index.html">Main</a>
+
   const menuItems = `
-       <li class="burger-item ${activePage === 'main' ? `active"><a href='./index'>Main</a>` : '"><a href=\'../../index.html\'>Main</a>'}</li>
+       <li class="burger-item ${activePage === 'main' ? `active"><a href='./index.html'>Main</a>` : '"><a href=\'../../index.html\'>Main</a>'}</li>
      <li class="burger-item pop">
         Matches
         <ul class="pop-menu">
@@ -28,4 +31,14 @@ export const addBurgerMenu = (activePage) => {
       burgerMenu.insertAdjacentHTML('afterbegin', menuItems);
     }
   });
+}
+
+export const init = (active) => {
+  const headerElement = document.getElementsByClassName('header')[0];
+  const footerElement = document.getElementsByClassName('footer')[0];
+  const nav = new Nav(active);
+  const footer = new Footer();
+  headerElement.insertAdjacentHTML('afterbegin', nav.toHtml());
+  footerElement.insertAdjacentHTML('afterbegin', footer.toHtml());
+  addBurgerMenu(active);
 }
