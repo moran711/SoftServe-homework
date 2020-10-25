@@ -112,10 +112,11 @@ class Dom {
     this.$el.classList.remove(className);
     return this;
   }
-
-  innerText(text) {
-    this.$el.innerText(text);
-    return this;
+  get innerText() {
+    return this.$el.innerText;
+  }
+  set innerText(text) {
+    this.$el.innerText = text;
   }
 
   remove() {

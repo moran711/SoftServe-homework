@@ -30,8 +30,8 @@ export default class BurgerMenu {
     const $burgerIcon = $('.burger-icon');
     const $nav= $('.nav');
     $burgerIcon.on('click', () => {
-      if (this.$root.isElExist()) {
-        this.$root.remove();
+      if ($burgerIcon.innerText === 'menu_open') {
+        $('.burger-menu').remove();
         $burgerIcon.innerText = 'menu';
       } else {
         $burgerIcon.innerText = 'menu_open';
