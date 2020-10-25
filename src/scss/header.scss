@@ -41,7 +41,7 @@
           background-color: $active-background;
           color: $active-font-color;
           transition: 2s;
-          transform: rotate(360deg);
+          animation: menu-item 2s;
         }
         a {
           color: $header-font-color;
@@ -202,6 +202,11 @@
   to {
     transform:rotate(360deg);
   }
+}
+
+@keyframes menu-item {
+   0%   { opacity: 0.5; }
+   100% { opacity: 1; }
 }
 
 @keyframes banner {
