@@ -1,12 +1,12 @@
+import {$} from '@core/dom';
+
 export default class BurgerMenu {
   constructor(activePage) {
     this.activePage = activePage;
+    this.$root = $('.burger-menu');
   }
 
   init() {
-    const burgerIcon = document.getElementsByClassName('burger-icon')[0];
-    const nav = document.getElementsByClassName('nav')[0];
-
     const menuItems = `
        <li class="burger-item ${
       this.activePage === 'main'
@@ -27,16 +27,18 @@ export default class BurgerMenu {
       <li class="burger-item">Contacts</li>
       <li class="burger-item">Admin</li>
     `;
-    burgerIcon.addEventListener('click', () => {
-      if (document.getElementsByClassName('burger-menu').length) {
-        document.getElementsByClassName('burger-menu')[0].remove();
-        burgerIcon.innerText = 'menu';
+    const $burgerIcon = $('.burger-icon');
+    const $nav= $('.nav');
+    $burgerIcon.on('click', () => {
+      if (this.$root.isElExist()) {
+        this.$root.remove();
+        $burgerIcon.innerText = 'menu';
       } else {
-        burgerIcon.innerText = 'menu_open';
-        const burgerMenu = document.createElement('ul');
-        burgerMenu.classList.add('burger-menu');
-        nav.appendChild(burgerMenu);
-        burgerMenu.insertAdjacentHTML('afterbegin', menuItems);
+        $burgerIcon.innerText = 'menu_open';
+        const $burgerMenu = $.create('ul');
+        $burgerMenu.addClass('burger-menu');
+        $nav.append($burgerMenu);
+        $burgerMenu.insertAdjacentHTML('afterbegin', menuItems);
       }
     });
   }

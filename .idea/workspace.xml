@@ -21,7 +21,18 @@
   <component name="ChangeListManager">
     <list default="true" id="2bd13b1d-32f7-49a4-a7f7-1719844a1648" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/burgerMenu/BurgerMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/burgerMenu/BurgerMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/nav/Nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/Nav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/page/PageInit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page/PageInit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/dom.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/dom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/news/news.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/news/news.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/news/scss/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/news/scss/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/news/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/news/scss/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_variables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +97,8 @@
       <workItem from="1603538203956" duration="7945000" />
       <workItem from="1603553543163" duration="3853000" />
       <workItem from="1603557894518" duration="3025000" />
-      <workItem from="1603613848322" duration="2723000" />
+      <workItem from="1603613848322" duration="3721000" />
+      <workItem from="1603630898615" duration="2651000" />
     </task>
     <servers />
   </component>
@@ -118,15 +130,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1603616133488" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/index.js</url>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="616" y="240" key="run.anything.popup" timestamp="1603632722439">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1603632722439" />
   </component>
 </project>

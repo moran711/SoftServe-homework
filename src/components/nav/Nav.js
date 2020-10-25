@@ -1,8 +1,13 @@
+import {$} from '@core/dom';
+
 export default class Nav {
   constructor(active) {
     this.active = active;
+    this.$root = $('.header');
   }
-
+  init() {
+    this.$root.insertAdjacentHTML('afterbegin', this.toHtml());
+  }
   toHtml() {
     return `
     <nav class="nav">
@@ -13,7 +18,7 @@ export default class Nav {
           <li class="${
             this.active === 'main' ? 'active' : ''
           } menu-item"><a href=${
-            this.active === 'main' ? './index' : '../../index.html'
+            this.active === 'main' ? './index.html' : '../../index.html'
           }>Main</a></li>
           <li class="menu-item pop">
             Matches

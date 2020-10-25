@@ -1,6 +1,12 @@
-export default class Footer {
-  constructor() {}
+import {$} from '@core/dom';
 
+export default class Footer {
+  constructor() {
+    this.$root = $('.footer');
+  }
+  init() {
+    this.$root.insertAdjacentHTML('afterbegin', this.toHtml());
+  }
   toHtml() {
     return `
       <div class="footer-contact-us">

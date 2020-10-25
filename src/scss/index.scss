@@ -6,6 +6,7 @@
 @import "./main.scss";
 
 body {
+  max-width: $max-width;
   width: $body-width;
   margin: auto;
   font-family: "Roboto", "sans-serif", serif;
