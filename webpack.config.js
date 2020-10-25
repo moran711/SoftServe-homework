@@ -18,6 +18,14 @@ const filename = ext => isDev ? `[name].bundle.${ext}` : `[name].bundle.[hash].$
 
 let htmlPageNames = ['news'];
 
+let getEntry = (pageNames) => {
+  const entry = {};
+  pageNames.forEach(name => {
+    entry[name] = `./pages/${name}/${name}.js`
+  });
+  return entry;
+}
+
 let multipleHtmlPlugins = htmlPageNames.map(name => {
   return new HTMLWebpackPlugin({
     template: `./pages/${name}/${name}.html`,
@@ -31,7 +39,7 @@ module.exports = {
   mode: 'development',
   entry: {
     index: './index.js', 
-    news: './pages/news/news.js'
+    ...getEntry(htmlPageNames)
   },
   output: {
     filename: filename('js'),
