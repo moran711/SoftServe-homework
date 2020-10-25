@@ -20,12 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2bd13b1d-32f7-49a4-a7f7-1719844a1648" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/banner/Banner.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/main/news.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/page/PageInit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page/PageInit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/burgerMenu/BurgerMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/burgerMenu/BurgerMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/nav/Nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/Nav.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +88,7 @@
       <workItem from="1603553543163" duration="3853000" />
       <workItem from="1603557894518" duration="3025000" />
       <workItem from="1603613848322" duration="3721000" />
-      <workItem from="1603630898615" duration="5865000" />
+      <workItem from="1603630898615" duration="7117000" />
     </task>
     <servers />
   </component>

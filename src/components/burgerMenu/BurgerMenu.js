@@ -7,6 +7,12 @@ export default class BurgerMenu {
   }
 
   init() {
+    const $nav= $('.nav');
+    $nav.insertAdjacentHTML('afterbegin', `
+      <span class="material-icons burger-icon">
+        menu
+      </span>
+    `);
     const menuItems = `
        <li class="burger-item ${
       this.activePage === 'main'
@@ -28,7 +34,6 @@ export default class BurgerMenu {
       <li class="burger-item">Admin</li>
     `;
     const $burgerIcon = $('.burger-icon');
-    const $nav= $('.nav');
     $burgerIcon.on('click', () => {
       if ($burgerIcon.innerText === 'menu_open') {
         $('.burger-menu').remove();

@@ -11,9 +11,6 @@ export default class Nav {
   toHtml() {
     return `
     <nav class="nav">
-        <span class="material-icons burger-icon">
-          menu
-        </span>
         <ul class="menu-list">
           <li class="${
             this.active === 'main' ? 'active' : ''
