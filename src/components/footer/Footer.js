@@ -9,6 +9,6 @@ export default class Footer {
         <p id="email">romaniv788@gmail.com</p>
       </div>
       <div class="footer-copyright">Copyright © - Roman Romaniv</div>
-    `
+    `;
   }
 }

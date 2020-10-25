@@ -1,6 +1,6 @@
 export default class Nav {
   constructor(active) {
-    this.active = active
+    this.active = active;
   }
 
   toHtml() {
@@ -43,6 +43,6 @@ export default class Nav {
           <img src="../../img/logo.png" alt="logo" class="logo-photo" />
         </div>
       </nav>
-    `
+    `;
   }
 }

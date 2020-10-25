@@ -21,7 +21,7 @@ let htmlPageNames = ['news'];
 let getEntry = (pageNames) => {
   const entry = {};
   pageNames.forEach(name => {
-    entry[name] = `./pages/${name}/${name}.js`
+    entry[name] = ['@babel/polyfill', `./pages/${name}/${name}.js`]
   });
   return entry;
 }
@@ -34,11 +34,22 @@ let multipleHtmlPlugins = htmlPageNames.map(name => {
   })
 });
 
+const jsLoaders = () => {
+    const loaders = [
+        'babel-loader'
+    ];
+
+    if (isDev) {
+        loaders.push('eslint-loader');
+    }
+    return loaders;
+};
+
 module.exports = {
   context: path.resolve(__dirname, 'src'),
   mode: 'development',
   entry: {
-    index: './index.js', 
+    index: ['@babel/polyfill', './index.js'],
     ...getEntry(htmlPageNames)
   },
   output: {
@@ -114,6 +125,11 @@ module.exports = {
           "sass-loader",
         ],
       },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: jsLoaders()
+      }
     ],
   }
 };

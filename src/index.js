@@ -1,4 +1,4 @@
 import '@/scss/index.scss';
-import { init } from '@/helper-functions/helper-functions';
+import Page from '@/components/page/PageInit';
 
-init('main');
+new Page('main').init();
