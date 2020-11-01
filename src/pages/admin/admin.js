@@ -6,6 +6,6 @@ import Footer from '@/components/footer/Footer';
 import NewsMain from '@/components/main/NewsMain';
 
 new Page({
-  activePage: 'news',
+  activePage: 'admin',
   components: [Nav, NewsMain, BurgerMenu, Footer]
 }).init();

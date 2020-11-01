@@ -44,6 +44,17 @@ export default class NewsMain {
             <a class="new-btn">See more</a>
           </div>
         </div>
+        <div class="new-container">  
+          <img src="../../img/news-img.png" class="new-img" alt="news photo" />
+          <div class="new-body">
+            <h3 class="new-title">News title</h3>
+            <p class="new-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a class="new-btn">See more</a>
+          </div>
+        </div>
       </section>
     `;
   }

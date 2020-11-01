@@ -5,7 +5,7 @@
   padding-top: $nav-height;
   & .news-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
     & .new-container {
       margin: 10px;
@@ -38,7 +38,7 @@
 @media (min-width: 768px) and (max-width: 1024px) {
   .main {
     & .news-list {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 }
