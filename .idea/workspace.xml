@@ -19,7 +19,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2bd13b1d-32f7-49a4-a7f7-1719844a1648" name="Default Changelist" comment="" />
+    <list default="true" id="2bd13b1d-32f7-49a4-a7f7-1719844a1648" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/main/RaitingsMain.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/raitings/raitings.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/raitings/raitings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/burgerMenu/BurgerMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/burgerMenu/BurgerMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main/BestMatchesMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/NextGameMain.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/nav/Nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/Nav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/best-matches/best-matches.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/calendar/calendar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/best-matches/best-matches.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/next-game/next-game.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/recent-matches/recent-matches.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/next-game/next-game.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/recent-matches/recent-matches.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/calendar/calendar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,6 +80,7 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\roman\OneDrive\Desktop\tasks\site\node_modules\prettier" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
@@ -92,7 +107,7 @@
       <workItem from="1603613848322" duration="3721000" />
       <workItem from="1603630898615" duration="8710000" />
       <workItem from="1603644065601" duration="438000" />
-      <workItem from="1604232700608" duration="5352000" />
+      <workItem from="1604232700608" duration="7438000" />
     </task>
     <servers />
   </component>

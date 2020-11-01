@@ -1,5 +1,5 @@
-@import "variables";
-@import "mixins";
+@import 'variables';
+@import 'mixins';
 
 .header {
   color: $header-font-color;
@@ -16,7 +16,7 @@
     display: flex;
     justify-content: space-between;
 
-    & .material-icons{
+    & .material-icons {
       display: none;
     }
 
@@ -33,7 +33,7 @@
       & .menu-item {
         cursor: pointer;
         margin-left: 2px;
-        
+
         & .menu-item-pop {
           display: none;
         }
@@ -63,9 +63,11 @@
             & .pop-menu-item {
               padding: 5px;
 
-              &:hover {
+              & a:hover {
                 background-color: $header-background;
                 color: $header-font-color;
+                transition: 2s;
+                animation: menu-item 2s;
               }
             }
           }
@@ -102,7 +104,7 @@
     display: inline-block;
     margin-top: $nav-height;
     overflow: hidden;
-  
+
     & .banner-photo {
       display: block;
       width: 100%;
@@ -120,16 +122,14 @@
     font-size: 0.85rem;
   }
 }
-@media  (max-width: 767px) {
+@media (max-width: 767px) {
   .header {
     & .nav {
       display: grid;
-      grid-template-areas:
-      "burger . . . logo"
-    ;
+      grid-template-areas: 'burger . . . logo';
       justify-content: space-between;
       align-items: center;
-      & .burger-icon{
+      & .burger-icon {
         display: block;
         padding-left: 3px;
         grid-area: burger;
@@ -174,7 +174,7 @@
             background-color: #a100de;
           }
         }
-        & .active{
+        & .active {
           background-color: #a100de;
         }
         & .pop {
@@ -200,19 +200,27 @@
 
 @keyframes spin {
   from {
-    transform:rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-    transform:rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 @keyframes menu-item {
-   0%   { opacity: 0.5; }
-   100% { opacity: 1; }
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes banner {
-  0%   { opacity: 0.3; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
 }

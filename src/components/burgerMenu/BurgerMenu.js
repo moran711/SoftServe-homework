@@ -23,8 +23,9 @@ export default class BurgerMenu {
       this.activePage === 'main' ? './index.html' : '../../index.html'
     }">Main</a></li>
           <li class="burger-item pop  ${
-            this.active === 'recent-matches' ||
-            this.activePage === 'best-matches'
+            this.activePage === 'calendar' ||
+            this.activePage === 'next-game' ||
+            this.activePage === 'raitings'
               ? 'active'
               : ''
           }">
@@ -32,14 +33,19 @@ export default class BurgerMenu {
               <ul class="pop-menu">
                 <li class="pop-menu-item"><a href=${
                   this.activePage === 'main'
-                    ? './pages/recent-matches/recent-matches.html'
-                    : '../recent-matches/recent-matches.html'
-                }>Recent matches</a></li>
+                    ? './pages/calendar/calendar.html'
+                    : '../calendar/calendar.html'
+                }>Calendar</a></li>
                 <li class="pop-menu-item"><a href=${
                   this.activePage === 'main'
-                    ? './pages/best-matches/best-matches.html'
-                    : '../best-matches/best-matches.html'
-                }>Best matches</a></li>
+                    ? './pages/next-game/next-game.html'
+                    : '../next-game/next-game.html'
+                }>Next game</a></li>
+                <li class="pop-menu-item"><a href=${
+                  this.activePage === 'main'
+                    ? './pages/raitings/raitings.html'
+                    : '../raitings/raitings.html'
+                }>Raitings</a></li>
               </ul>
           </li>
           <li class="${

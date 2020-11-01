@@ -6,6 +6,6 @@ import Footer from '@/components/footer/Footer';
 import RecentMatchesMain from '@/components/main/RecentMatchesMain';
 
 new Page({
-  activePage: 'recent-matches',
-  components: [Nav, RecentMatchesMain, BurgerMenu, Footer]
+  activePage: 'calendar',
+  components: [Nav, RecentMatchesMain, BurgerMenu, Footer],
 }).init();

@@ -16,11 +16,12 @@ const filename = (ext) =>
 
 const htmlPageNames = [
   'admin',
-  'best-matches',
+  'next-game',
   'contacts',
   'fans',
   'news',
-  'recent-matches',
+  'calendar',
+  'raitings',
 ];
 
 const getEntry = (pageNames) => {

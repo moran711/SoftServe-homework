@@ -1,6 +1,6 @@
 import {$} from '@core/dom';
 
-export default class BestMatchesMain {
+export default class NextGameMain {
   constructor(active) {
     this.active = active;
     this.$root = $('.main');

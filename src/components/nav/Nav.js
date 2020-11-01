@@ -18,7 +18,9 @@ export default class Nav {
       this.active === 'main' ? './index.html' : '../../index.html'
     }>Main</a></li>
           <li class="menu-item pop  ${
-            this.active === 'recent-matches' || this.active === 'best-matches'
+            this.active === 'calendar' ||
+            this.active === 'next-game' ||
+            this.active === 'raitings'
               ? 'active'
               : ''
           }">
@@ -27,14 +29,19 @@ export default class Nav {
               <ul class="pop-menu-list">
                 <li class="pop-menu-item"><a href=${
                   this.active === 'main'
-                    ? './pages/recent-matches/recent-matches.html'
-                    : '../recent-matches/recent-matches.html'
-                }>Recent matches</a></li>
+                    ? './pages/calendar/calendar.html'
+                    : '../calendar/calendar.html'
+                }>Calendar</a></li>
                 <li class="pop-menu-item"><a href=${
                   this.active === 'main'
-                    ? './pages/best-matches/best-matches.html'
-                    : '../best-matches/best-matches.html'
-                }>Best matches</a></li>
+                    ? './pages/next-game/next-game.html'
+                    : '../next-game/next-game.html'
+                }>Next game</a></li>
+                <li class="pop-menu-item"><a href=${
+                  this.active === 'main'
+                    ? './pages/raitings/raitings.html'
+                    : '../raitings/raitings.html'
+                }>Raitings</a></li>
               </ul>
             </div>
           </li>
