@@ -3,9 +3,9 @@ import Page from '@/components/page/PageInit';
 import BurgerMenu from '@/components/burgerMenu/BurgerMenu';
 import Nav from '@/components/nav/Nav';
 import Footer from '@/components/footer/Footer';
-import NewsMain from '@/components/main/NewsMain';
+import AdminMain from '@/components/main/AdminMain';
 
 new Page({
   activePage: 'admin',
-  components: [Nav, NewsMain, BurgerMenu, Footer]
+  components: [Nav, AdminMain, BurgerMenu, Footer]
 }).init();

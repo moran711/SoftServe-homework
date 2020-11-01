@@ -7,31 +7,69 @@ export default class BurgerMenu {
   }
 
   init() {
-    const $nav= $('.nav');
-    $nav.insertAdjacentHTML('afterbegin', `
+    const $nav = $('.nav');
+    $nav.insertAdjacentHTML(
+      'afterbegin',
+      `
       <span class="material-icons burger-icon">
         menu
       </span>
-    `);
+    `,
+    );
     const menuItems = `
-       <li class="burger-item ${
+          <li class="burger-item ${
+            this.activePage === 'main' ? 'active' : ''
+          } "><a href="${
+      this.activePage === 'main' ? './index.html' : '../../index.html'
+    }">Main</a></li>
+          <li class="burger-item pop  ${
+            this.active === 'recent-matches' ||
+            this.activePage === 'best-matches'
+              ? 'active'
+              : ''
+          }">
+            Matches
+              <ul class="pop-menu">
+                <li class="pop-menu-item"><a href=${
+                  this.activePage === 'main'
+                    ? './pages/recent-matches/recent-matches.html'
+                    : '../recent-matches/recent-matches.html'
+                }>Recent matches</a></li>
+                <li class="pop-menu-item"><a href=${
+                  this.activePage === 'main'
+                    ? './pages/best-matches/best-matches.html'
+                    : '../best-matches/best-matches.html'
+                }>Best matches</a></li>
+              </ul>
+          </li>
+          <li class="${
+            this.activePage === 'news' ? 'active' : ''
+          } burger-item"><a href=${
       this.activePage === 'main'
-        ? `active"><a href='./index.html'>Main</a>`
-        : `"><a href='../../index.html'>Main</a>`
-      }</li>
-       <li class="burger-item pop">
-          Matches
-          <ul class="pop-menu">
-            <li class="pop-menu-item">Recent matches</li>
-            <li class="pop-menu-item">Best matches</li>
-          </ul>
-      </li>
-      <li class="burger-item ${
-        this.activePage === 'news' ? 'active' : ''
-      }"><a href="./pages/news/news.html">News</a></li>
-      <li class="burger-item">Fans</li>
-      <li class="burger-item">Contacts</li>
-      <li class="burger-item">Admin</li>
+        ? './pages/news/news.html'
+        : '../news/news.html'
+    }>News</a></li>
+          <li class="${
+            this.activePage === 'fans' ? 'active' : ''
+          } burger-item"><a href=${
+      this.activePage === 'main'
+        ? './pages/fans/fans.html'
+        : '../fans/fans.html'
+    }>Fans</a></li>
+          <li class="${
+            this.activePage === 'contacts' ? 'active' : ''
+          } burger-item"><a href=${
+      this.activePage === 'main'
+        ? './pages/contacts/contacts.html'
+        : '../contacts/contacts.html'
+    }>Contacts</a></li>
+          <li class="${
+            this.activePage === 'admin' ? 'active' : ''
+          } burger-item"><a href=${
+      this.activePage === 'main'
+        ? './pages/admin/admin.html'
+        : '../admin/admin.html'
+    }>Admin</a></li>
     `;
     const $burgerIcon = $('.burger-icon');
     $burgerIcon.on('click', () => {
