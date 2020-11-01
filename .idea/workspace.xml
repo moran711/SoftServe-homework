@@ -20,16 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2bd13b1d-32f7-49a4-a7f7-1719844a1648" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/main/ContactsMain.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/main/FansMain.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/main/RecentMatchesMain.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/burgerMenu/BurgerMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/burgerMenu/BurgerMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/admin/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/admin/admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/best-matches/best-matches.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/best-matches/best-matches.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/contacts/contacts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/contacts/contacts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/fans/fans.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/fans/fans.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/recent-matches/recent-matches.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/recent-matches/recent-matches.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/nav/Nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/Nav.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +95,7 @@
       <workItem from="1603613848322" duration="3721000" />
       <workItem from="1603630898615" duration="8710000" />
       <workItem from="1603644065601" duration="438000" />
-      <workItem from="1604232700608" duration="3230000" />
+      <workItem from="1604232700608" duration="3543000" />
     </task>
     <servers />
   </component>

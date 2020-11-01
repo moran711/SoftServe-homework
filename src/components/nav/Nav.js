@@ -15,11 +15,12 @@ export default class Nav {
           <li class="${
             this.active === 'main' ? 'active' : ''
           } menu-item"><a href=${
-            this.active === 'main' ? './index.html' : '../../index.html'
-          }>Main</a></li>
+      this.active === 'main' ? './index.html' : '../../index.html'
+    }>Main</a></li>
           <li class="menu-item pop  ${
             this.active === 'recent-matches' || this.active === 'best-matches'
-              ? 'active' : ''
+              ? 'active'
+              : ''
           }">
             Matches
             <div class="menu-item-pop">
@@ -40,31 +41,27 @@ export default class Nav {
           <li class="${
             this.active === 'news' ? 'active' : ''
           } menu-item"><a href=${
-            this.active === 'main'
-              ? './pages/news/news.html'
-              : '../news/news.html'
-          }>News</a></li>
+      this.active === 'main' ? './pages/news/news.html' : '../news/news.html'
+    }>News</a></li>
           <li class="${
             this.active === 'fans' ? 'active' : ''
           } menu-item"><a href=${
-              this.active === 'main'
-                ? './pages/fans/fans.html'
-                : '../fans/fans.html'
-            }>Fans</a></li>
+      this.active === 'main' ? './pages/fans/fans.html' : '../fans/fans.html'
+    }>Fans</a></li>
           <li class="${
             this.active === 'contacts' ? 'active' : ''
           } menu-item"><a href=${
-          this.active === 'main'
-            ? './pages/contacts/contacts.html'
-            : '../contacts/contacts.html'
-          }>Contacts</a></li>
+      this.active === 'main'
+        ? './pages/contacts/contacts.html'
+        : '../contacts/contacts.html'
+    }>Contacts</a></li>
           <li class="${
             this.active === 'admin' ? 'active' : ''
           } menu-item"><a href=${
-            this.active === 'main'
-              ? './pages/admin/admin.html'
-              : '../admin/admin.html'
-          }>Admin</a></li>
+      this.active === 'main'
+        ? './pages/admin/admin.html'
+        : '../admin/admin.html'
+    }>Admin</a></li>
         </ul>
         <div class="logo">
           <img src="../../img/logo.png" alt="logo" class="logo-photo" />
