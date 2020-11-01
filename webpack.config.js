@@ -16,7 +16,7 @@ console.log('isDev', isDev);
 
 const filename = ext => isDev ? `[name].bundle.${ext}` : `[name].bundle.[hash].${ext}`;
 
-let htmlPageNames = ['news'];
+let htmlPageNames = ['admin', 'best-matches', 'contacts', 'fans', 'news', 'recent-matches'];
 
 let getEntry = (pageNames) => {
   const entry = {};
@@ -31,7 +31,7 @@ let multipleHtmlPlugins = htmlPageNames.map(name => {
     template: `./pages/${name}/${name}.html`,
     filename: `./pages/${name}/${name}.html`,
     chunks: [`${name}`]
-  })
+  });
 });
 
 const jsLoaders = () => {

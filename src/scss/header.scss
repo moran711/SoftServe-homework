@@ -120,7 +120,7 @@
     font-size: 0.85rem;
   }
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media  (max-width: 767px) {
   .header {
     & .nav {
       display: grid;
@@ -213,6 +213,6 @@
 }
 
 @keyframes banner {
-  50%   { opacity: 0; }
+  0%   { opacity: 0.3; }
   100% { opacity: 1; }
 }

@@ -8,5 +8,5 @@ import Banner from '@/components/banner/Banner';
 
 new Page({
   activePage: 'main',
-  components: [Nav, Footer, IndexMain, BurgerMenu, Banner]
+  components: [Nav, Banner, BurgerMenu, IndexMain, Footer]
 }).init();

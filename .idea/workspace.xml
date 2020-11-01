@@ -21,8 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2bd13b1d-32f7-49a4-a7f7-1719844a1648" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/burgerMenu/BurgerMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/burgerMenu/BurgerMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/nav/Nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/Nav.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +37,12 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
@@ -64,7 +68,7 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -88,7 +92,8 @@
       <workItem from="1603553543163" duration="3853000" />
       <workItem from="1603557894518" duration="3025000" />
       <workItem from="1603613848322" duration="3721000" />
-      <workItem from="1603630898615" duration="7117000" />
+      <workItem from="1603630898615" duration="8710000" />
+      <workItem from="1603644065601" duration="438000" />
     </task>
     <servers />
   </component>
@@ -116,10 +121,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="703" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1603560927718" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1603616133488">
+    <state x="461" y="165" width="1296" height="710" key="SettingsEditor" timestamp="1603641752366">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1603616133488" />
+    <state x="461" y="165" width="1296" height="710" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1603641752366" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1603632722439">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
