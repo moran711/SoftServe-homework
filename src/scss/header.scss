@@ -33,7 +33,13 @@
       & .menu-item {
         cursor: pointer;
         margin-left: 2px;
-
+        &.pop {
+          margin: 0;
+          padding: 0;
+          & .dropdown {
+            padding: 1px 3px 1px 3px;
+          }
+        }
         & .menu-item-pop {
           display: none;
         }
@@ -54,22 +60,36 @@
       }
 
       & .pop {
-        &:hover .menu-item-pop {
-          display: flex;
-          padding: 5px;
+        padding: 0;
+        margin: 0;
+        & .menu-item-pop {
+          padding: 0px;
           & .pop-menu-list {
             list-style: none;
-            padding: 0;
+            padding: 4px;
             & .pop-menu-item {
-              padding: 5px;
+              margin: 4px 2px 0px 2px;
+              & a {
+                padding: 4px;
+                color: $active-font-color;
 
-              & a:hover {
-                background-color: $header-background;
-                color: $header-font-color;
-                transition: 2s;
-                animation: menu-item 2s;
+                &:hover {
+                  background-color: $header-background;
+                  color: $header-font-color;
+                  transition: 2s;
+                  animation: menu-item 2s;
+                }
               }
             }
+          }
+        }
+        &:hover {
+          & .dropdown {
+            background-color: $header-background;
+            color: $header-font-color;
+          }
+          & .menu-item-pop {
+            display: block;
           }
         }
       }

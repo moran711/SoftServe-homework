@@ -24,7 +24,9 @@ export default class Nav {
               ? 'active'
               : ''
           }">
-            Matches
+            <div class="dropdown">
+              Matches
+            </div>
             <div class="menu-item-pop">
               <ul class="pop-menu-list">
                 <li class="pop-menu-item"><a href=${
