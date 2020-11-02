@@ -20,37 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2bd13b1d-32f7-49a4-a7f7-1719844a1648" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/admin/scss/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/admin/scss/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/admin/scss/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/admin/scss/main.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/calendar/scss/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/calendar/scss/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/calendar/scss/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/calendar/scss/main.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/contacts/scss/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/contacts/scss/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/contacts/scss/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/contacts/scss/main.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/fans/scss/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/fans/scss/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/fans/scss/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/fans/scss/main.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/next-game/scss/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/next-game/scss/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/next-game/scss/main.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/raitings/scss/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/raitings/scss/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/raitings/scss/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/raitings/scss/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/admin/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/admin/admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/calendar/calendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/calendar/calendar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/contacts/contacts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/contacts/contacts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/fans/fans.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/fans/fans.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/next-game/next-game.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/next-game/next-game.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/raitings/raitings.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/raitings/raitings.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main/ContactsMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/ContactsMain.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/contacts/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/contacts/scss/main.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +110,7 @@
       <workItem from="1604232700608" duration="8608000" />
       <workItem from="1604253178065" duration="637000" />
       <workItem from="1604309372205" duration="3360000" />
-      <workItem from="1604321551199" duration="757000" />
+      <workItem from="1604321551199" duration="1883000" />
     </task>
     <servers />
   </component>

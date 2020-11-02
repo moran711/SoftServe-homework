@@ -11,7 +11,14 @@ export default class ContactsMain {
   toHtml() {
     return `
       <div class="contacts">
-      
+        <h3 class="contacts-header">
+          Contacts
+        </h3>
+        <div class="contacts-container">
+          <p class="phone-number">+34932691532</p>
+          <p class="site"><a href="http://www.fcbarcelona.cat/">http://www.fcbarcelona.cat/</a></p>
+          <p class="address">Carrer de Jaume I, 18, 08002 Barcelona, Spain</p>
+        </div>
       </div>
       <div class="map"> 
         <iframe 
