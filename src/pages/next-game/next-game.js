@@ -1,4 +1,4 @@
-import '@/pages/news/scss/index.scss';
+import '@/pages/next-game/scss/index.scss';
 import Page from '@/components/page/PageInit';
 import BurgerMenu from '@/components/burgerMenu/BurgerMenu';
 import Nav from '@/components/nav/Nav';

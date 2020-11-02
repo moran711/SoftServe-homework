@@ -1,4 +1,4 @@
-import '@/pages/news/scss/index.scss';
+import '@/pages/fans/scss/index.scss';
 import Page from '@/components/page/PageInit';
 import BurgerMenu from '@/components/burgerMenu/BurgerMenu';
 import Nav from '@/components/nav/Nav';
@@ -7,5 +7,5 @@ import FansMain from '@/components/main/FansMain';
 
 new Page({
   activePage: 'fans',
-  components: [Nav, FansMain, BurgerMenu, Footer]
+  components: [Nav, FansMain, BurgerMenu, Footer],
 }).init();
