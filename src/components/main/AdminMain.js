@@ -21,21 +21,21 @@ export default class AdminMain {
           <button class="add-image-btn" type="submit">Add image</button>  
          </form>
          <form action="" class="add-news">
-         <div class="input-container">
-          <input 
-            type="text" 
-            placeholder="News title" 
-            class="add-news-title" 
-            required
-          >
-          <textarea 
-            rows = "5" 
-            cols = "60" 
-            name = "description" 
-            placeholder="Add news text"
-            class="add-news-text"
-            required
-          ></textarea>
+          <div class="input-container">
+            <input 
+              type="text" 
+              placeholder="News title" 
+              class="add-news-title" 
+              required
+            >
+            <textarea 
+              rows = "5" 
+              cols = "60" 
+              name = "description" 
+              placeholder="Add news text"
+              class="add-news-text"
+              required
+            ></textarea>
           </div>
           <button class="add-news-btn" type="submit">Add news</button>  
          </form>
