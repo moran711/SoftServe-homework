@@ -10,7 +10,7 @@ export default class FansMain {
   }
   toHtml() {
     return `
-      <h2>
+      <h2 class="appeal-header">
         Appeal of fans
       </h2>
       <div class="appeal-container">
