@@ -21,8 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2bd13b1d-32f7-49a4-a7f7-1719844a1648" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main/ContactsMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/ContactsMain.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/contacts/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/contacts/scss/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main/FansMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/FansMain.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/fans/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/fans/scss/main.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +74,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\roman\OneDrive\Desktop\tasks\site\node_modules\prettier" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -110,7 +110,10 @@
       <workItem from="1604232700608" duration="8608000" />
       <workItem from="1604253178065" duration="637000" />
       <workItem from="1604309372205" duration="3360000" />
-      <workItem from="1604321551199" duration="1883000" />
+      <workItem from="1604321551199" duration="4990000" />
+      <workItem from="1604405971782" duration="6000" />
+      <workItem from="1604493038364" duration="5851000" />
+      <workItem from="1604592616464" duration="5080000" />
     </task>
     <servers />
   </component>
@@ -138,10 +141,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="703" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1603560927718" />
-    <state x="461" y="165" width="1296" height="710" key="SettingsEditor" timestamp="1604234064875">
+    <state x="461" y="165" width="1296" height="710" key="SettingsEditor" timestamp="1604324155750">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="165" width="1296" height="710" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1604234064875" />
+    <state x="461" y="165" width="1296" height="710" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1604324155750" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1603632722439">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

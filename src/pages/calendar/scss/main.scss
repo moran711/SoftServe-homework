@@ -2,5 +2,51 @@
 @import 'mixins';
 
 .main {
-  padding-top: $nav-height;
+  padding-top: $nav-height + 5px;
+  margin-bottom: 10px;
+  & .calendar-container {
+    margin: auto;
+    font-size: 1.3rem;
+    width: 90%;
+    border-collapse: collapse;
+    & .table-header {
+    }
+    & tbody {
+      & .col-header {
+        word-wrap: break-word;
+        .row-header {
+          padding: 10px;
+          border: 1px solid black;
+        }
+      }
+      & .row-content {
+        word-wrap: break-word;
+        & .col-content {
+          padding: 10px;
+          border: 1px solid black;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .main {
+    & .calendar-container {
+      & .table-header {
+      }
+      & tbody {
+        & .col-header {
+          .row-header {
+            font-size: 0.8rem;
+          }
+        }
+        & .row-content {
+          & .col-content {
+            font-size: 0.7rem;
+          }
+        }
+      }
+    }
+  }
 }
