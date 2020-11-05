@@ -31,15 +31,14 @@ export default class FansMain {
         </div>
       </div>
       <form action="" class="add-appeal">
-            <textarea 
-              rows = "5" 
-              cols = "60" 
-              name = "description" 
-              placeholder="Send appeal..."
-              class="add-news-text"
-              required
-            ></textarea>
-          </div>
+        <textarea 
+          rows = "5" 
+          cols = "60" 
+          name = "description" 
+          placeholder="Send appeal..."
+          class="add-news-text"
+          required
+         ></textarea>
         <button class="add-news-btn" type="submit">Add appeal</button>  
       </form>
     `;
