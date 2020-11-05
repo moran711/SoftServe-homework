@@ -20,7 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2bd13b1d-32f7-49a4-a7f7-1719844a1648" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/main/FansMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/FansMain.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/fans/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/fans/scss/main.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +113,7 @@
       <workItem from="1604321551199" duration="4990000" />
       <workItem from="1604405971782" duration="6000" />
       <workItem from="1604493038364" duration="5851000" />
-      <workItem from="1604592616464" duration="4386000" />
+      <workItem from="1604592616464" duration="5080000" />
     </task>
     <servers />
   </component>
