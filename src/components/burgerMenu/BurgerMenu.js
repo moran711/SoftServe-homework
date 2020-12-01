@@ -3,7 +3,7 @@ import {DomListener} from '@core/DomListener';
 
 export default class BurgerMenu extends DomListener {
   constructor(activePage) {
-    super($('.burger-menu'), ['click']);
+    super($('.burger-menu'));
     this.activePage = activePage;
     this.$root = $('.burger-menu');
   }
