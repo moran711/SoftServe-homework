@@ -1,15 +1,16 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-@import "~normalize.css";
-@import "@/scss/header.scss";
-@import "@/scss/footer.scss";
-@import "./main.scss";
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import '~normalize.css';
+@import '@/scss/header.scss';
+@import '@/scss/footer.scss';
+@import '@/scss/alert.scss';
+@import './main.scss';
 
 body {
   max-width: $max-width;
   width: $body-width;
   margin: auto;
-  font-family: "Roboto", "sans-serif", serif;
+  font-family: 'Roboto', 'sans-serif', serif;
   font-size: 18px;
 }
 
