@@ -4,6 +4,8 @@
 @import '@/scss/header.scss';
 @import '@/scss/footer.scss';
 @import './main.scss';
+@import '@/scss/alert.scss';
+
 body {
   max-width: $max-width;
   width: $body-width;

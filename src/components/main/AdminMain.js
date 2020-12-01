@@ -1,12 +1,28 @@
 import {$} from '@core/dom';
+import {DomListener} from '@core/DomListener';
+import {showAlert} from '@/components/alert/alert';
 
-export default class AdminMain {
+export default class AdminMain extends DomListener {
   constructor(active) {
+    super($('.main'), ['submit']);
     this.active = active;
     this.$root = $('.main');
   }
+  onSubmit(e) {
+    e.preventDefault();
+    const newsTitle = $('.add-news-title').text();
+    const newsText = $('.add-news-text').text();
+    if (newsTitle.trim().length < 2) {
+      showAlert('Please add news title', false);
+      return true;
+    } else if (newsText.trim().length < 2) {
+      showAlert('Please add news text', false);
+      return true;
+    }
+  }
   init() {
     this.$root.insertAdjacentHTML('afterbegin', this.toHtml());
+    this.initDOMListeners();
   }
   toHtml() {
     return `

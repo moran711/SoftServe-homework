@@ -29,7 +29,10 @@ class Dom {
       this.$el.textContent = text;
       return this;
     }
-    if (this.$el.tagName.toLowerCase() === 'input') {
+    if (
+      this.$el.tagName.toLowerCase() === 'input' ||
+      this.$el.tagName.toLowerCase() === 'textarea'
+    ) {
       return this.$el.value.trim();
     }
     return this.$el.textContent.trim();
@@ -122,7 +125,9 @@ class Dom {
     this.$el.remove();
     return this;
   }
-
+  clearInput() {
+    this.$el.value = '';
+  }
   get data() {
     return this.$el.dataset;
   }

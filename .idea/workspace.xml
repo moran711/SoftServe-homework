@@ -16,17 +16,34 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/fans-page" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2bd13b1d-32f7-49a4-a7f7-1719844a1648" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/core/DomListener.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/alert/alert.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/alert.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/banner/Banner.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/banner/Banner.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/burgerMenu/BurgerMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/burgerMenu/BurgerMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/nav/Nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/Nav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main/AdminMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/AdminMain.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main/FansMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/FansMain.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/core/dom.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/dom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/utils/helper-functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/utils/helper-functions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/admin/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/admin/scss/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/admin/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/admin/scss/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/calendar/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/calendar/scss/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/contacts/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/contacts/scss/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/fans/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/fans/scss/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/fans/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/fans/scss/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/news/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/news/scss/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/next-game/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/next-game/scss/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/raitings/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/raitings/scss/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +55,7 @@
       <list>
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -67,6 +85,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/raitings" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -121,7 +140,7 @@
       <workItem from="1604650231875" duration="3352000" />
       <workItem from="1605950619356" duration="92000" />
       <workItem from="1606115918236" duration="2050000" />
-      <workItem from="1606818743792" duration="3327000" />
+      <workItem from="1606818743792" duration="8763000" />
     </task>
     <servers />
   </component>
@@ -133,7 +152,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/fans-page" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -153,10 +184,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" width="1296" height="710" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605950712296" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1603632722439">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1606846727989">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1603632722439" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606846727989" />
     <state x="623" y="225" key="search.everywhere.popup" timestamp="1604233897272">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
