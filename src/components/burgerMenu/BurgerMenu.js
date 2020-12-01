@@ -1,17 +1,18 @@
 import {$} from '@core/dom';
+import {DomListener} from '@core/DomListener';
 
-export default class BurgerMenu {
+export default class BurgerMenu extends DomListener {
   constructor(activePage) {
+    super($('.burger-menu'));
     this.activePage = activePage;
     this.$root = $('.burger-menu');
   }
-
   init() {
-    const $nav = $('.nav');
-    $nav.insertAdjacentHTML(
+    this.$nav = $('.nav');
+    this.$nav.insertAdjacentHTML(
       'afterbegin',
       `
-      <span class="material-icons burger-icon">
+      <span class="material-icons burger-icon" data-icon="burger-icon">
         menu
       </span>
     `,
@@ -86,7 +87,7 @@ export default class BurgerMenu {
         $burgerIcon.innerText = 'menu_open';
         const $burgerMenu = $.create('ul');
         $burgerMenu.addClass('burger-menu');
-        $nav.append($burgerMenu);
+        this.$nav.append($burgerMenu);
         $burgerMenu.insertAdjacentHTML('afterbegin', menuItems);
       }
     });
