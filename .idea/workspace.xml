@@ -27,23 +27,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2bd13b1d-32f7-49a4-a7f7-1719844a1648" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/alert/alert.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/alert.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/main/AdminMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/AdminMain.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/main/FansMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/FansMain.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main/NewsMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/NewsMain.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/page/PageInit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page/PageInit.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/core/dom.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/dom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/admin/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/admin/scss/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/admin/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/admin/scss/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/calendar/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/calendar/scss/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/contacts/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/contacts/scss/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/fans/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/fans/scss/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/fans/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/fans/scss/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/news/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/news/scss/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/next-game/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/next-game/scss/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/raitings/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/raitings/scss/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/utils/helper-functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/utils/helper-functions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/news/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/news/scss/main.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,8 +45,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -140,7 +131,10 @@
       <workItem from="1604650231875" duration="3352000" />
       <workItem from="1605950619356" duration="92000" />
       <workItem from="1606115918236" duration="2050000" />
-      <workItem from="1606818743792" duration="8763000" />
+      <workItem from="1606818743792" duration="10020000" />
+      <workItem from="1606892213133" duration="4772000" />
+      <workItem from="1607084492471" duration="1612000" />
+      <workItem from="1607181087473" duration="4235000" />
     </task>
     <servers />
   </component>
@@ -184,10 +178,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" width="1296" height="710" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605950712296" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1606846727989">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1606892962067">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606846727989" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606892962067" />
     <state x="623" y="225" key="search.everywhere.popup" timestamp="1604233897272">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

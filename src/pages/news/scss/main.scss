@@ -1,5 +1,5 @@
-@import "variables";
-@import "mixins";
+@import 'variables';
+@import 'mixins';
 
 .main {
   padding-top: $nav-height;
@@ -14,7 +14,8 @@
         width: 100%;
       }
       & .new-body {
-        display: grid;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-content: center;
         & .new-title {
@@ -29,6 +30,7 @@
           &:hover {
             cursor: pointer;
           }
+          align-self: center;
         }
       }
     }
@@ -45,7 +47,6 @@
 
 @media (min-width: 320px) and (max-width: 767px) {
   .main {
-
     & .news-list {
       grid-template-columns: repeat(1, 1fr);
     }

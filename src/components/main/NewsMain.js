@@ -1,4 +1,5 @@
 import {$} from '@core/dom';
+import {fetchAPI, isOnline, storage} from '@core/utils/helper-functions';
 
 export default class NewsMain {
   constructor(active) {
@@ -7,6 +8,19 @@ export default class NewsMain {
   }
   init() {
     this.$root.insertAdjacentHTML('afterbegin', this.toHtml());
+    const news = storage('news');
+    if (Array.isArray(news) && news.length) {
+      news.forEach((data) => {
+        $('.news-list').insertAdjacentHTML('beforeend', data);
+      });
+      if (isOnline()) {
+        fetchAPI('POST', 'url', news);
+      }
+    }
+    if (isOnline()) {
+      fetchAPI('GET', 'url', news);
+      storage('news', []);
+    }
   }
   toHtml() {
     return `

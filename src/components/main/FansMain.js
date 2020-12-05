@@ -1,6 +1,7 @@
 import {$} from '@core/dom';
 import {DomListener} from '@core/DomListener';
 import {showAlert} from '@/components/alert/alert';
+import {fetchAPI, isOnline, storage} from '@core/utils/helper-functions';
 
 export default class FansMain extends DomListener {
   constructor(active) {
@@ -11,6 +12,19 @@ export default class FansMain extends DomListener {
   init() {
     this.$root.insertAdjacentHTML('afterbegin', this.toHtml());
     this.initDOMListeners();
+    const comments = storage('comments');
+    if (Array.isArray(comments) && comments.length) {
+      comments.forEach((comment) => {
+        $('.appreal').insertAdjacentHTML('beforeend', comment);
+      });
+      if (isOnline()) {
+        fetchAPI('POST', 'url', comments);
+      }
+    }
+    if (isOnline()) {
+      fetchAPI('GET', 'url', comments);
+      storage('comments', []);
+    }
   }
   onSubmit(e) {
     e.preventDefault();
@@ -20,8 +34,8 @@ export default class FansMain extends DomListener {
       return true;
     }
     const date = Date.now();
-    const day = new Date(date).getDay();
-    const month = new Date(date).getMonth();
+    const day = new Date(date).getDate();
+    const month = new Date(date).getMonth() + 1;
     const year = new Date(date).getFullYear();
     const comment = `
         <div class="appeal-container">
@@ -35,7 +49,17 @@ export default class FansMain extends DomListener {
         </div>
     `;
     $('.add-comment-appeal').clearInput();
-    $('.appreal').insertAdjacentHTML('beforeend', comment);
+    if (isOnline()) {
+      $('.appreal').insertAdjacentHTML('beforeend', comment);
+      fetchAPI('POST', 'url', comment);
+      return true;
+    }
+    const comments = storage('comments');
+    if (Array.isArray(comments)) {
+      storage('comments', [...comments, comment]);
+      return true;
+    }
+    storage('comments', [comment]);
   }
   toHtml() {
     return `
