@@ -1,2 +1,2 @@
-node_modules
-dist
+/front-end/node_modules
+/front-end/dist

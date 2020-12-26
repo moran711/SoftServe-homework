@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import '~normalize.css';
+@import '@/scss/header.scss';
+@import '@/scss/footer.scss';
+@import './main.scss';
+@import '@/scss/alert.scss';
+
+body {
+  max-width: $max-width;
+  width: $body-width;
+  margin: auto;
+  font-family: 'Roboto', 'sans-serif', serif;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  body {
+    font-size: 13px;
+  }
+}

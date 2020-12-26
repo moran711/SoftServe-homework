@@ -1,0 +1,100 @@
+@import 'variables';
+@import 'mixins';
+
+.main {
+  padding-top: $nav-height;
+  margin-bottom: 10px;
+
+  & .appeal-header {
+    text-align: center;
+  }
+  & .appreal {
+    & .appeal-container {
+      width: 80%;
+      margin: auto;
+      border-bottom: 4px solid #570078;
+      padding: 10px;
+      margin-bottom: 5px;
+
+      & .appeal-text {
+      }
+
+      & .appeal-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 10px;
+
+        & .appeal-date {
+          padding-left: 5px;
+          font-size: 0.8rem;
+        }
+
+        & .fan-nickname {
+          padding-right: 5px;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+
+  & .add-appeal {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: start;
+
+    & .add-comment-appeal {
+      width: 95%;
+      font-size: 1rem;
+      margin: 10px;
+    }
+
+    & .add-appeal-btn {
+      border: none;
+      padding: 10px;
+      background-color: $btn-background;
+      border-radius: 10px;
+      width: 120px;
+      color: $header-font-color;
+      font-size: 1rem;
+      align-self: end;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .main {
+    & .appeal-header {
+    }
+
+    & .appreal {
+      & .appeal-container {
+        & .appeal-text {
+        }
+
+        & .appeal-footer {
+          & .appeal-date {
+          }
+
+          & .fan-nickname {
+          }
+        }
+      }
+    }
+
+    & .add-appeal {
+      & .add-comment-appeal {
+      }
+
+      & .add-appeal-btn {
+        margin-left: 8px;
+        font-size: 0.8rem;
+        width: 100px;
+      }
+    }
+  }
+}
