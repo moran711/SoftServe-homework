@@ -2,10 +2,9 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 @import '~normalize.css';
 @import '@/scss/header.scss';
+@import '@/scss/alert.scss';
 @import '@/scss/footer.scss';
-@import '@/scss/alert.scss';
 @import './main.scss';
-@import '@/scss/alert.scss';
 
 body {
   max-width: $max-width;

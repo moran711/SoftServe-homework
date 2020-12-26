@@ -27,8 +27,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2bd13b1d-32f7-49a4-a7f7-1719844a1648" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/alert/alert.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/alert.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD:front-end/.idea/workspace.xml
       <change beforePath="$PROJECT_DIR$/src/components/page/PageInit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page/PageInit.js" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/components/main/AdminMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/AdminMain.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main/FansMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/FansMain.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/dom.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/dom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/admin/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/admin/scss/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/admin/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/admin/scss/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/calendar/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/calendar/scss/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/contacts/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/contacts/scss/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/fans/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/fans/scss/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/fans/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/fans/scss/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/news/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/news/scss/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/next-game/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/next-game/scss/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/raitings/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/raitings/scss/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/index.scss" afterDir="false" />
+>>>>>>> 89d0b44f9843d6cc55d58b1425fcdf2eab8753e8:.idea/workspace.xml
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +60,7 @@
         <option value="HTML File" />
         <option value="SCSS File" />
         <option value="JavaScript File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -69,7 +89,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
+<<<<<<< HEAD:front-end/.idea/workspace.xml
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../softserve/horondi_client_be" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/raitings" />
+>>>>>>> 89d0b44f9843d6cc55d58b1425fcdf2eab8753e8:.idea/workspace.xml
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -125,6 +149,7 @@
       <workItem from="1604650231875" duration="3352000" />
       <workItem from="1605950619356" duration="92000" />
       <workItem from="1606115918236" duration="2050000" />
+<<<<<<< HEAD:front-end/.idea/workspace.xml
       <workItem from="1606818743792" duration="10020000" />
       <workItem from="1606892213133" duration="4772000" />
       <workItem from="1607084492471" duration="1612000" />
@@ -132,6 +157,9 @@
       <workItem from="1607436069831" duration="2630000" />
       <workItem from="1608111491410" duration="1030000" />
       <workItem from="1608320237875" duration="22000" />
+=======
+      <workItem from="1606818743792" duration="8763000" />
+>>>>>>> 89d0b44f9843d6cc55d58b1425fcdf2eab8753e8:.idea/workspace.xml
     </task>
     <servers />
   </component>
@@ -171,18 +199,28 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="703" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1603560927718" />
+<<<<<<< HEAD:front-end/.idea/workspace.xml
     <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1608320261194">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1608320261194" />
+=======
+>>>>>>> 89d0b44f9843d6cc55d58b1425fcdf2eab8753e8:.idea/workspace.xml
     <state x="461" y="165" width="1296" height="710" key="SettingsEditor" timestamp="1605950712296">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" width="1296" height="710" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605950712296" />
+<<<<<<< HEAD:front-end/.idea/workspace.xml
     <state x="616" y="240" key="run.anything.popup" timestamp="1606892962067">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606892962067" />
+=======
+    <state x="616" y="240" key="run.anything.popup" timestamp="1606846727989">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606846727989" />
+>>>>>>> 89d0b44f9843d6cc55d58b1425fcdf2eab8753e8:.idea/workspace.xml
     <state x="623" y="225" key="search.everywhere.popup" timestamp="1604233897272">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

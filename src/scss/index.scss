@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 @import '~normalize.css';
-@import '@/scss/header.scss';
-@import '@/scss/footer.scss';
-@import '@/scss/alert.scss';
+@import './header.scss';
+@import './footer.scss';
 @import './main.scss';
 @import '@/scss/alert.scss';
 
@@ -16,7 +15,12 @@ body {
 }
 
 a {
+  color: $header-font-color;
   text-decoration: none;
+
+  &:hover {
+    color: $active-font-color;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
