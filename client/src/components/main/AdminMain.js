@@ -5,11 +5,27 @@ import {fetchAPI, isOnline, storage} from '@core/utils/helper-functions';
 
 export default class AdminMain extends DomListener {
   constructor(active) {
-    super($('.main'), ['submit']);
+    super($('.main'), ['submit', 'change']);
     this.active = active;
     this.$root = $('.main');
+    this.image = ''
   }
-  onSubmit(e) {
+  onChange(e) {
+    const dataChange = $(e.target).data.change;
+    if (dataChange === 'image') {
+      const image = $('.added-image');
+      // image.attr('src', URL.createObjectURL(e.target.files[0]));
+      const FR= new FileReader();
+    
+      FR.addEventListener("load", (e) => {
+        image.attr('src', e.target.result);
+        this.image = e.target.result;
+      }); 
+      
+      FR.readAsDataURL( e.target.files[0] );
+    }
+  }
+  async onSubmit(e) {
     e.preventDefault();
     const dataSubmit = $(e.target).data.submit;
     if (dataSubmit === 'add-news-content') {
@@ -24,32 +40,28 @@ export default class AdminMain extends DomListener {
       } else if (newsText.trim().length < 2) {
         showAlert('Please add news text', false);
         return true;
+      } else if (!this.image) {
+        showAlert('Please add image', false);
       }
       showAlert('Successfully added');
       $('.add-news-title').clearInput();
       $('.add-news-text').clearInput();
-      const data = `
-          <div class="new-container">  
-            <img src="../../img/news-img.png" class="new-img" alt="news photo" />
-            <div class="new-body">
-              <h3 class="new-title">${newsTitle}</h3>
-              <p class="new-text">
-                ${newsText}
-              </p>
-              <a class="new-btn">See more</a>
-            </div>
-          </div>
-        `;
+
+      const news = {
+        title: newsTitle,
+        text: newsText,
+        image: this.image
+      }
       if (isOnline()) {
-        fetchAPI('POST', 'url', data);
+        await fetchAPI('POST', 'http://localhost:5000/news', news);
         return true;
       }
-      const news = storage('news');
+      const newsStorage = storage('news');
       if (Array.isArray(news)) {
-        storage('news', [...news, data]);
+        storage('news', [...newsStorage, news]);
         return true;
       }
-      storage('news', [data]);
+      storage('news', [news]);
     }
   }
   init() {
@@ -61,14 +73,12 @@ export default class AdminMain extends DomListener {
          <h2 class="admin-header">
           Add news
          </h2>
-         <form class="add-image-section">
-          <img 
+         <form action="" class="add-news"  data-submit="add-news-content">
+         <img 
             class="added-image" 
             src="../../img/news-img.png" 
             alt="barselona logo">
-          <button class="add-image-btn" type="submit">Add image</button>  
-         </form>
-         <form action="" class="add-news"  data-submit="add-news-content">
+          <input type="file"  accept="image/*" name="image" id="file" data-change="image">
           <div class="input-container">
             <input 
               type="text" 

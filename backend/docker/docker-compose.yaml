@@ -8,4 +8,4 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: root
       MONGO_INITDB_DATABASE: horondi
     ports:
-      - '27027:27027'
+      - '27017:27017'

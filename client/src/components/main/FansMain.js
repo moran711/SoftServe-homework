@@ -9,20 +9,29 @@ export default class FansMain extends DomListener {
     this.active = active;
     this.$root = $('.main');
   }
-  init() {
+  async init() {
     this.$root.insertAdjacentHTML('afterbegin', this.toHtml());
     this.initDOMListeners();
-    const comments = storage('comments');
-    if (Array.isArray(comments) && comments.length) {
-      comments.forEach((comment) => {
-        $('.appreal').insertAdjacentHTML('beforeend', comment);
-      });
-      if (isOnline()) {
-        fetchAPI('POST', 'url', comments);
-      }
-    }
     if (isOnline()) {
-      fetchAPI('GET', 'url', comments);
+      const comments = await fetchAPI('GET', 'http://localhost:5000/comment');
+      comments.forEach((comment) => {
+        const date = new Date(comment.date);
+        const day = new Date(date).getDate();
+        const month = new Date(date).getMonth() + 1;
+        const year = new Date(date).getFullYear();
+        const commentHTML = `
+        <div class="appeal-container">
+          <div class="appeal-text">
+            ${comment.text}
+          </div>
+          <div class="appeal-footer">
+            <div class="appeal-date">${`${day}.${month}.${year}`}</div>
+            <div class="fan-nickname">Football fan 228</div>
+          </div>
+        </div>
+        `;
+        $('.appreal').insertAdjacentHTML('beforeend', commentHTML);
+      });
       storage('comments', []);
     }
   }
@@ -37,7 +46,7 @@ export default class FansMain extends DomListener {
     const day = new Date(date).getDate();
     const month = new Date(date).getMonth() + 1;
     const year = new Date(date).getFullYear();
-    const comment = `
+    const commentHTML = `
         <div class="appeal-container">
           <div class="appeal-text">
             ${commentText}
@@ -49,9 +58,13 @@ export default class FansMain extends DomListener {
         </div>
     `;
     $('.add-comment-appeal').clearInput();
+    const comment = {
+      text: commentText,
+      date: Date.now()
+    }
     if (isOnline()) {
-      $('.appreal').insertAdjacentHTML('beforeend', comment);
-      fetchAPI('POST', 'url', comment);
+      $('.appreal').insertAdjacentHTML('beforeend', commentHTML);
+      fetchAPI('POST', 'http://localhost:5000/comment', comment);
       return true;
     }
     const comments = storage('comments');
@@ -67,57 +80,7 @@ export default class FansMain extends DomListener {
         Appeal of fans
       </h2>
       <div class="appreal">
-        <div class="appeal-container">
-          <div class="appeal-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            Doloremque excepturi iusto mollitia quisquam.
-            Accusamus aperiam debitis delectus doloremque
-            dolores eius error eveniet ex harum illum ipsa ipsam
-            iusto laboriosam libero necessitatibus, obcaecati
-            optio perspiciatis possimus quod recusandae repellendus
-            repudiandae sit suscipit tempore temporibus veritatis, vero. 
-            Ad, aperiam consequatur doloremque dolores ducimus, 
-            nemo nesciunt odio officiis possimus quam qui repellat sapiente.
-          </div>
-          <div class="appeal-footer">
-            <div class="appeal-date">01.02.2020</div>
-            <div class="fan-nickname">Football fan 228</div>
-          </div>
-        </div>
-        <div class="appeal-container">
-          <div class="appeal-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            Doloremque excepturi iusto mollitia quisquam.
-            Accusamus aperiam debitis delectus doloremque
-            dolores eius error eveniet ex harum illum ipsa ipsam
-            iusto laboriosam libero necessitatibus, obcaecati
-            optio perspiciatis possimus quod recusandae repellendus
-            repudiandae sit suscipit tempore temporibus veritatis, vero. 
-            Ad, aperiam consequatur doloremque dolores ducimus, 
-            nemo nesciunt odio officiis possimus quam qui repellat sapiente.
-          </div>
-          <div class="appeal-footer">
-            <div class="appeal-date">01.02.2020</div>
-            <div class="fan-nickname">Football fan 228</div>
-          </div>
-        </div>
-        <div class="appeal-container">
-          <div class="appeal-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            Doloremque excepturi iusto mollitia quisquam.
-            Accusamus aperiam debitis delectus doloremque
-            dolores eius error eveniet ex harum illum ipsa ipsam
-            iusto laboriosam libero necessitatibus, obcaecati
-            optio perspiciatis possimus quod recusandae repellendus
-            repudiandae sit suscipit tempore temporibus veritatis, vero. 
-            Ad, aperiam consequatur doloremque dolores ducimus, 
-            nemo nesciunt odio officiis possimus quam qui repellat sapiente.
-          </div>
-          <div class="appeal-footer">
-            <div class="appeal-date">01.02.2020</div>
-            <div class="fan-nickname">Football fan 228</div>
-          </div>
-        </div>
+        
       </div>
       <form action="" class="add-appeal">
         <textarea 

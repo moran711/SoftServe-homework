@@ -1,3 +1,4 @@
+import axios from 'axios';
 export function capitalize(string) {
   if (typeof string !== 'string') {
     return '';
@@ -16,13 +17,24 @@ export function storage(key, data = null) {
   localStorage.setItem(key, JSON.stringify(data));
 }
 
-export function fetchAPI(method, url, data) {
+export async function fetchAPI(method, url, data) {
+
   switch (method) {
     case 'GET':
-      console.log('data received');
+        try {
+        const { data } = await axios({
+          method: 'get',
+          url,
+        });
+        return data
+        } catch(e) {
+          console.error(e.message)
+        }
       break;
     case 'POST':
-      console.log('data sent');
+      await fetch(url, {method, body: JSON.stringify(data), headers: {
+        'Content-Type': 'application/json'
+    },})
       break;
     default:
       console.log('data');
