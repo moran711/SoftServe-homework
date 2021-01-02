@@ -14,11 +14,11 @@ jobs:
 
       - name: Install
         run: |
-          cd ./client && npm install
+          npm install
         
       - name: Build 
         run: |
-          cd ./client && npm run build  
+          && npm run build  
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.6.2
