@@ -16,11 +16,6 @@
     "build": "cross-env NODE_ENV=production webpack --mode production",
     "pretest": "eslint --ignore-path .gitignore . --fix"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged && npm run pretest"
-    }
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/moran711/SoftServe-homework.git"
